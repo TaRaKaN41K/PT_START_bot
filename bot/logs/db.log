@@ -1,0 +1,119 @@
+2024-10-10 23:35:43,139 - db_logger - ERROR - Ошибка при подключении к PostgreSQL: connection to server at "192.168.0.151", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.0.190", user "postgres", database "db_database", SSL encryption
+connection to server at "192.168.0.151", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.0.190", user "postgres", database "db_database", no encryption
+
+2024-10-10 23:39:16,404 - db_logger - ERROR - Ошибка при подключении к PostgreSQL: connection to server at "192.168.0.151", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.0.190", user "postgres", database "db_database", SSL encryption
+connection to server at "192.168.0.151", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.0.190", user "postgres", database "db_database", no encryption
+
+2024-10-10 23:41:09,042 - db_logger - ERROR - Ошибка при подключении к PostgreSQL: connection to server at "192.168.0.151", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.0.190", user "postgres", database "db_database", SSL encryption
+connection to server at "192.168.0.151", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.0.190", user "postgres", database "db_database", no encryption
+
+2024-10-10 23:41:53,578 - db_logger - ERROR - Ошибка при подключении к PostgreSQL: connection to server at "192.168.0.151", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.0.190", user "postgres", database "db_database", SSL encryption
+connection to server at "192.168.0.151", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.0.190", user "postgres", database "db_database", no encryption
+
+2024-10-10 23:43:13,797 - db_logger - ERROR - Ошибка при подключении к PostgreSQL: connection to server at "192.168.0.151", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.0.190", user "postgres", database "bot_phon_numbers_and_emails_db", SSL encryption
+connection to server at "192.168.0.151", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.0.190", user "postgres", database "bot_phon_numbers_and_emails_db", no encryption
+
+2024-10-10 23:43:51,944 - db_logger - ERROR - Ошибка при подключении к PostgreSQL: connection to server at "192.168.0.151", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.0.190", user "postgres", database "bot_phon_numbers_and_emails_db", SSL encryption
+connection to server at "192.168.0.151", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.0.190", user "postgres", database "bot_phon_numbers_and_emails_db", no encryption
+
+2024-10-11 00:12:08,670 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 00:12:15,593 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 00:16:53,115 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 00:16:56,840 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 00:41:45,757 - db_logger - INFO - Запрос email-адресов из базы данных.
+2024-10-11 00:41:45,869 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 00:41:45,878 - db_logger - INFO - Успешно получены 2 email-адресов.
+2024-10-11 00:45:03,533 - db_logger - INFO - Запрос на добавление email-адресов в базу данных.
+2024-10-11 00:45:03,624 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 00:45:04,480 - db_logger - INFO - Успешно добавлено 203 email-адресов.
+2024-10-11 00:45:16,068 - db_logger - INFO - Запрос email-адресов из базы данных.
+2024-10-11 00:45:16,132 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 00:45:16,142 - db_logger - INFO - Успешно получены 205 email-адресов.
+2024-10-11 00:49:31,955 - db_logger - INFO - Запрос email-адресов из базы данных.
+2024-10-11 00:49:32,059 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 00:49:32,067 - db_logger - INFO - Успешно получены 2 email-адресов.
+2024-10-11 00:49:46,956 - db_logger - INFO - Запрос на добавление email-адресов в базу данных.
+2024-10-11 00:49:46,995 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 00:49:46,995 - db_logger - ERROR - Ошибка при записи email-адресов: not enough values to unpack (expected 2, got 1)
+2024-10-11 00:51:13,641 - db_logger - INFO - Запрос на добавление email-адресов в базу данных.
+2024-10-11 00:51:13,739 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 00:51:13,739 - db_logger - ERROR - Ошибка при записи email-адресов: not enough values to unpack (expected 2, got 1)
+2024-10-11 00:51:40,779 - db_logger - INFO - Запрос на добавление email-адресов в базу данных.
+2024-10-11 00:51:40,837 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 00:53:07,347 - db_logger - INFO - Запрос на добавление email-адресов в базу данных.
+2024-10-11 00:53:07,409 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 00:55:32,683 - db_logger - INFO - Запрос на добавление email-адресов в базу данных.
+2024-10-11 00:55:32,790 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 00:55:42,693 - db_logger - INFO - Успешно добавлено 7 email-адресов.
+2024-10-11 00:56:12,358 - db_logger - INFO - Запрос email-адресов из базы данных.
+2024-10-11 00:56:12,402 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 00:56:12,411 - db_logger - INFO - Успешно получены 9 email-адресов.
+2024-10-11 00:58:00,552 - db_logger - INFO - Запрос номеров телефонов из базы данных.
+2024-10-11 00:58:00,593 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 00:58:00,606 - db_logger - INFO - Успешно получены 2 номеров телефонов.
+2024-10-11 00:58:10,309 - db_logger - INFO - Запрос на добавление номеров телефонов в базу данных.
+2024-10-11 00:58:10,356 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 00:58:10,387 - db_logger - INFO - Успешно получены 5 номеров телефонов.
+2024-10-11 00:58:15,781 - db_logger - INFO - Запрос номеров телефонов из базы данных.
+2024-10-11 00:58:15,825 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 00:58:15,832 - db_logger - INFO - Успешно получены 7 номеров телефонов.
+2024-10-11 01:10:31,453 - db_logger - INFO - Запрос номеров телефонов из базы данных.
+2024-10-11 01:10:31,533 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 01:10:31,542 - db_logger - INFO - Успешно получены 7 номеров телефонов.
+2024-10-11 01:10:40,365 - db_logger - INFO - Запрос email-адресов из базы данных.
+2024-10-11 01:10:40,407 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 01:10:40,417 - db_logger - INFO - Успешно получены 9 email-адресов.
+2024-10-11 01:10:58,169 - db_logger - INFO - Запрос на добавление email-адресов в базу данных.
+2024-10-11 01:10:58,215 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 01:10:58,252 - db_logger - INFO - Успешно добавлено 7 email-адресов.
+2024-10-11 01:11:02,991 - db_logger - INFO - Запрос email-адресов из базы данных.
+2024-10-11 01:11:03,033 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 01:11:03,042 - db_logger - INFO - Успешно получены 16 email-адресов.
+2024-10-11 01:23:00,456 - db_logger - INFO - Запрос email-адресов из базы данных.
+2024-10-11 01:23:00,548 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 01:23:00,556 - db_logger - INFO - Успешно получены 15 email-адресов.
+2024-10-11 01:23:18,835 - db_logger - INFO - Запрос email-адресов из базы данных.
+2024-10-11 01:23:18,885 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 01:23:18,895 - db_logger - INFO - Успешно получены 14 email-адресов.
+2024-10-11 01:27:48,049 - db_logger - INFO - Запрос email-адресов из базы данных.
+2024-10-11 01:27:48,124 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 01:27:48,133 - db_logger - INFO - Успешно получены 14 email-адресов.
+2024-10-11 01:30:26,272 - db_logger - INFO - Запрос email-адресов из базы данных.
+2024-10-11 01:30:26,372 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 01:30:26,386 - db_logger - INFO - Успешно получены 13 email-адресов.
+2024-10-11 01:32:27,372 - db_logger - INFO - Запрос номеров телефонов из базы данных.
+2024-10-11 01:32:27,459 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 01:32:27,472 - db_logger - INFO - Успешно получены 7 номеров телефонов.
+2024-10-11 01:33:02,158 - db_logger - INFO - Запрос номеров телефонов из базы данных.
+2024-10-11 01:33:02,238 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 01:33:02,251 - db_logger - INFO - Успешно получены 6 номеров телефонов.
+2024-10-11 01:40:25,817 - db_logger - INFO - Запрос номеров телефонов из базы данных.
+2024-10-11 01:40:25,919 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 01:40:25,928 - db_logger - INFO - Успешно получены 6 номеров телефонов.
+2024-10-11 01:40:35,671 - db_logger - INFO - Запрос email-адресов из базы данных.
+2024-10-11 01:40:35,716 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 01:40:35,726 - db_logger - INFO - Успешно получены 13 email-адресов.
+2024-10-11 01:55:58,831 - db_logger - INFO - Запрос email-адресов из базы данных.
+2024-10-11 01:55:59,071 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 01:55:59,079 - db_logger - INFO - Успешно получены 13 email-адресов.
+2024-10-11 01:56:06,559 - db_logger - INFO - Запрос номеров телефонов из базы данных.
+2024-10-11 01:56:06,679 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 01:56:06,709 - db_logger - INFO - Успешно получены 6 номеров телефонов.
+2024-10-11 01:57:39,087 - db_logger - INFO - Запрос на добавление email-адресов в базу данных.
+2024-10-11 01:57:39,131 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 01:57:39,145 - db_logger - INFO - Успешно добавлено 1 email-адресов.
+2024-10-11 01:57:53,815 - db_logger - INFO - Запрос email-адресов из базы данных.
+2024-10-11 01:57:53,941 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 01:57:53,970 - db_logger - INFO - Успешно получены 14 email-адресов.
+2024-10-11 01:59:24,199 - db_logger - INFO - Запрос email-адресов из базы данных.
+2024-10-11 01:59:24,254 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 01:59:24,262 - db_logger - INFO - Успешно получены 14 email-адресов.
+2024-10-11 02:00:57,526 - db_logger - INFO - Запрос на добавление номеров телефонов в базу данных.
+2024-10-11 02:00:57,592 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 02:00:57,606 - db_logger - INFO - Успешно получены 1 номеров телефонов.
+2024-10-11 02:01:10,850 - db_logger - INFO - Запрос номеров телефонов из базы данных.
+2024-10-11 02:01:10,909 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 02:01:10,918 - db_logger - INFO - Успешно получены 7 номеров телефонов.
+2024-10-11 02:02:04,488 - db_logger - INFO - Запрос номеров телефонов из базы данных.
+2024-10-11 02:02:04,535 - db_logger - INFO - Подключение к базе данных bot_phon_numbers_and_emails_db на 192.168.0.151:5432 установлено
+2024-10-11 02:02:04,542 - db_logger - INFO - Успешно получены 7 номеров телефонов.
