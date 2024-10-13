@@ -7,7 +7,7 @@ BEGIN
       FROM   pg_catalog.pg_roles
       WHERE  rolname = 'postgres') THEN
 
-      CREATE ROLE postgres WITH LOGIN PASSWORD 'postgres';
+      EXECUTE 'CREATE ROLE postgres WITH LOGIN PASSWORD ''postgres''';
    END IF;
 END
 $do$;
@@ -19,13 +19,18 @@ BEGIN
    IF NOT EXISTS (
       SELECT 1 FROM pg_database
       WHERE datname = 'bot_phon_numbers_and_emails_db') THEN
-      CREATE DATABASE bot_phon_numbers_and_emails_db;
+      EXECUTE 'CREATE DATABASE bot_phon_numbers_and_emails_db';
    END IF;
 END
 $do$;
 
 -- Присваиваем права пользователю на созданную базу данных
-GRANT ALL PRIVILEGES ON DATABASE bot_phon_numbers_and_emails_db TO postgres;
+DO
+$do$
+BEGIN
+   EXECUTE 'GRANT ALL PRIVILEGES ON DATABASE bot_phon_numbers_and_emails_db TO postgres';
+END
+$do$;
 
 -- Переключаемся на базу данных
 \c bot_phon_numbers_and_emails_db
