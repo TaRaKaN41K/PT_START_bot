@@ -1,14 +1,6 @@
--- Создание базы данных, если она не существует
-DO
-$do$
-BEGIN
-   IF NOT EXISTS (
-      SELECT FROM pg_database
-      WHERE datname = 'bot_phon_numbers_and_emails_db') THEN
-      CREATE DATABASE bot_phon_numbers_and_emails_db;
-   END IF;
-END
-$do$;
+-- Проверяем, существует ли база данных, и создаем её, если она не существует
+SELECT 'CREATE DATABASE bot_phon_numbers_and_emails_db'
+WHERE NOT EXISTS (SELECT FROM pg_database WHERE datname = 'bot_phon_numbers_and_emails_db')\gexec;
 
 -- Присваиваем права пользователю на созданную базу данных
 GRANT ALL PRIVILEGES ON DATABASE bot_phon_numbers_and_emails_db TO postgres;
