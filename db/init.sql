@@ -1,6 +1,3 @@
--- Создание пользователя, если он не существует
-CREATE ROLE postgres WITH LOGIN PASSWORD 'postgres';
-
 -- Создание базы данных, если она не существует
 CREATE DATABASE bot_phon_numbers_and_emails_db;
 
