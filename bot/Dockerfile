@@ -15,7 +15,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Копируем только необходимые файлы (например, код)
 COPY src/ ./src
-COPY logs/ ./logs
 
 # Устанавливаем рабочую директорию для запуска приложения
 WORKDIR /app
