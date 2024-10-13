@@ -18,7 +18,7 @@ COPY src/ ./src
 COPY logs/ ./logs
 
 # Устанавливаем рабочую директорию для запуска приложения
-WORKDIR /app
+WORKDIR /app/src
 
 # Команда для запуска приложения
 CMD ["python", "src/main.py"]
