@@ -5,6 +5,8 @@ RUN mkdir -p /etc/postgresql/
 # Установка прав доступа для каталога данных
 RUN chmod 750 /var/lib/postgresql/data
 
+ENV POSTGRES_HOST_AUTH_METHOD=trust
+
 # Установка точки входа
 ENTRYPOINT [ "bash", "-c", "\
 cat <<EOF > /etc/postgresql/postgresql.conf \n\
