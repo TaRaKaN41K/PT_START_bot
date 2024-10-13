@@ -1,5 +1,16 @@
--- Проверяем, существует ли база данных, и создаем её, если она не существует
-CREATE DATABASE IF NOT EXISTS bot_phon_numbers_and_emails_db;
+CREATE EXTENSION IF NOT EXISTS dblink;
+
+Копировать код
+-- Проверяем, существует ли база данных
+DO
+$$
+BEGIN
+    IF NOT EXISTS (SELECT FROM pg_database WHERE datname = 'bot_phon_numbers_and_emails_db') THEN
+        -- Создаем базу данных, если она не существует
+        PERFORM dblink_exec('dbname=postgres', 'CREATE DATABASE bot_phon_numbers_and_emails_db');
+    END IF;
+END
+$$;
 
 -- Присваиваем права пользователю на созданную базу данных
 GRANT ALL PRIVILEGES ON DATABASE bot_phon_numbers_and_emails_db TO postgres;
