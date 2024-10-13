@@ -2,6 +2,8 @@ FROM postgres:14
 
 # Создание директории для конфигурации PostgreSQL
 RUN mkdir -p /etc/postgresql/ && \
+    mkdir -p /etc/postgresql/14 && \
+    mkdir -p /etc/postgresql/14/main && \
     mkdir -p /var/log/postgresql/ && \
     chown postgres:postgres /var/log/postgresql/
 
@@ -10,7 +12,7 @@ RUN chmod 750 /var/lib/postgresql/data
 
 # Установка точки входа
 ENTRYPOINT [ "bash", "-c", "\
-cat <<EOF > /etc/postgresql/postgresql.conf \n\
+cat <<EOF > /etc/postgresql/14/main/postgresql.conf \n\
 listen_addresses = 'localhost, ${DB_REPL_HOST}' \n\
 port = ${DB_REPL_PORT} \n\
 log_destination = 'stderr' \n\
@@ -27,4 +29,4 @@ echo ${DB_REPL_PASSWORD} | pg_basebackup -v -R \\\n\
 docker-entrypoint.sh $@"]
 
 # Установка команды по умолчанию
-CMD ["postgres", "-c", "config_file=/etc/postgresql/postgresql.conf"]
+CMD ["postgres", "-c", "config_file=/etc/postgresql/14/main/postgresql.conf"]
