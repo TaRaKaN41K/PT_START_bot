@@ -5,7 +5,7 @@ RUN apt-get install gettext-base
 
 COPY ./init.sql /docker-entrypoint-initdb.d/init.sql.raw
 RUN mkdir -p /etc/postgresql/
-RUN mkdir -p /oracle/pg data/archive/
+RUN mkdir -p /oracle/pgdata/archive/
 RUN chown postgres:postgres /oracle/pg_data/archive/
 
 ENTRYPOINT [ "bash", "-c", "\ 
