@@ -1,6 +1,5 @@
 CREATE EXTENSION IF NOT EXISTS dblink;
 
-Копировать код
 -- Проверяем, существует ли база данных
 DO
 $$
