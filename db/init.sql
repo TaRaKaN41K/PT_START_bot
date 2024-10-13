@@ -1,5 +1,14 @@
 -- Создание базы данных, если она не существует
-CREATE DATABASE bot_phon_numbers_and_emails_db;
+DO
+$do$
+BEGIN
+   IF NOT EXISTS (
+      SELECT FROM pg_database
+      WHERE datname = 'bot_phon_numbers_and_emails_db') THEN
+      CREATE DATABASE bot_phon_numbers_and_emails_db;
+   END IF;
+END
+$do$;
 
 -- Присваиваем права пользователю на созданную базу данных
 GRANT ALL PRIVILEGES ON DATABASE bot_phon_numbers_and_emails_db TO postgres;
@@ -18,3 +27,4 @@ CREATE TABLE IF NOT EXISTS phone_numbers (
     id SERIAL PRIMARY KEY,
     phone_number VARCHAR(255)
 );
+
